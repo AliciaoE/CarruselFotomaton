@@ -1,45 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Carrusel</title>
- 
-  <link href="css/style.css" rel="stylesheet">
-</head>
-<header>
-  <div class="dropdown">
-    <button onclick="toggleDropdown()" class="dropbtn">Ajustes</button>
-    <div id="myDropdown" class="dropdown-content">
-      <input type="button" id="Mostrar" onclick="Mostrar()" value="Mostrar" />
-      <input type="button" id="Agregar" onclick="Agregar()" value="Agregar" />
-      <input type="button" id="Eliminar" onclick="Eliminar()" value="Eliminar" />
-      <input type="button" id="Modificar" onclick="Modificar()" value="Modificar" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrusel</title>
+    <link href="./css/style.css" rel="stylesheet" />
+  </head>
+  <header>
+    <div class="dropdown">
+      <button onclick="toggleDropdown()" class="dropbtn">Ajustes</button>
+      <div id="myDropdown" class="dropdown-content">
+        <input type="button" id="Mostrar" onclick="Mostrar()" value="Mostrar" />
+        <input type="button" id="Agregar" onclick="Agregar()" value="Agregar" />
+        <input
+          type="button"
+          id="Eliminar"
+          onclick="Eliminar()"
+          value="Eliminar"
+        />
+        <input
+          type="button"
+          id="Modificar"
+          onclick="Modificar()"
+          value="Modificar"
+        />
+      </div>
     </div>
-  </div>
-</header>
+  </header>
 
-<body>
+  <body>
+    <div id="container">
+      <h1><span id="nombreImagen"></span></h1>
 
-  <div id="container">
-    <h1> <span id="nombreImagen"></span></h1>
+      <p>
+        <img
+          id="imagen"
+          title="Bruno"
+          alt="Foto de Bruno"
+          src="img/sansebastian.jpg"
+        />
+      </p>
 
-    <p><img id="imagen" title="Bruno" alt="Foto de Bruno" src="img/sansebastian.jpg"></p>
+      <p>
+        <input
+          type="button"
+          id="boton-retroceder"
+          onclick="retroceder()"
+          value="Retroceder"
+        />
 
-    <p> <input type="button" id="boton-retroceder" onclick="retroceder()" value="Retroceder" />
+        <input
+          type="button"
+          id="boton-avanzar"
+          onclick="avanzar()"
+          value="Avanzar"
+        />
+      </p>
+      <p id="desc"></p>
+    </div>
 
-      <input type="button" id="boton-avanzar" onclick="avanzar()" value="Avanzar" />
-    </p>
-    <p id="desc"></p>
-  </div>
-
-  <script src="js/claseImagen.js"></script>
-  <script src="js/imagenes.js"></script>
-  <script src="js/funciones.js"></script>
-  <script src="js/main.js"></script>
-
-</body>
-
+    <script src="js/claseImagen.js"></script>
+    <script src="js/imagenes.js"></script>
+    <script src="js/funciones.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
