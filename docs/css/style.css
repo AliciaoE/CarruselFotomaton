@@ -60,13 +60,11 @@ input[type="button"] {
   font-weight: bold;
   text-align: center;
 }
-
 .boton {
   display: flex;
   justify-content: center;
   align-items: flex-start;
 }
-
 #nombreImagen {
   display: inline-block;
   margin: 10px;
