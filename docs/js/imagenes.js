@@ -30,12 +30,6 @@ const imagenes = [
   ),
 
   new Imagen(
-    "beniquenza-.jpg",
-    "Embalse de Mequinenza",
-    "Zaragoza",
-    "O mar de Aragón es un embalse del río Ebro que se encuentra en la provincia de Zaragoza. El embalse recibe el nombre de Mequinenza debido a que la presa que lo origina está ubicada en esta localidad bajocinqueña. "
-  ),
-  new Imagen(
     "olot.jpg",
     " Olot desde el volcán Montsacopa",
     "Olot",

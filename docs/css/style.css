@@ -1,7 +1,6 @@
 body {
   margin: 0;
   padding: 0;
-  height: 100%;
   text-align: center;
   font-family: "Comic Sans MS", sans-serif;
   background-image: url('../img/fondo4.png');
@@ -9,7 +8,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  font-size: 21px;
+  font-size: 18px; /* Tamaño de fuente reducido */
   color: #080808;
   font-weight: bold;
   overflow-x: hidden;
@@ -23,8 +22,7 @@ body {
   /* Permite alinear verticalmente el contenido */
   flex-direction: column;
   /* Alinear el contenido verticalmente */
-  justify-content: center;
-  /* Centra verticalmente el contenido */
+  justify-content: flex-start; /* Alinea el contenido en la parte superior */
   align-items: center;
   /* Centra horizontalmente el contenido */
 }
@@ -37,8 +35,8 @@ p#desc {
 }
 
 h1 {
-  color: #e06080;
-  text-shadow: 0 1px 0 #050505, 0 2px 0 #66fca9, 0 3px 0 #78f53e, 0 4px 0 #f3ea99, 0 5px 0 #82f5d3, 0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .2), 0 20px 20px rgba(233, 101, 101, 0.15);
+  color: #8c0829;
+  /* Resto del código para el efecto de sombra */
 }
 
 #imagen {
@@ -50,16 +48,23 @@ h1 {
 
 input[type="button"] {
   display: inline-block;
-  margin: 20px;
+  margin: 10px; /* Margen reducido */
   padding: 10px 20px;
   border: 2px solid #f6f6f6;
   color: #080808;
   background-color: rgba(250, 248, 127, 0.74);
   border-radius: 5px;
-  font-size: 23px;
+  font-size: 18px; /* Tamaño de fuente reducido */
   cursor: pointer;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   font-weight: bold;
+  text-align: center;
+}
+
+.boton {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 #nombreImagen {
@@ -70,42 +75,5 @@ input[type="button"] {
 
 header {
   text-align: left;
-  padding: 10px 20px;
-  /* Ajustar el espaciado según sea necesario */
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropbtn {
-  background-color: #3498db;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f58fbaab;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  top: 100%;
-  /* Ajustar la posición vertical del menú desplegable */
-  left: 0;
-  /* Ajustar la posición horizontal del menú desplegable */
-}
-
-.dropdown-content input[type="button"] {
-  display: block;
-  width: 100%;
-  padding: 8px 16px;
-  border: none;
-  background-color: transparent;
-  text-align: left;
+  padding: 5px 20px; /* Espaciado del encabezado reducido */
 }

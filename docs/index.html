@@ -11,9 +11,7 @@
 
 <body>
   <header>
-    <div class="dropdown">
-      <button onclick="toggleDropdown()" class="dropbtn">Ajustes</button>
-      <div id="myDropdown" class="dropdown-content">
+    <div class="boton">
         <input type="button" id="Mostrar" onclick="Mostrar()" value="Mostrar" />
         <input type="button" id="Agregar" onclick="Agregar()" value="Agregar" />
         <input type="button" id="Eliminar" onclick="Eliminar()" value="Eliminar" />
@@ -30,8 +28,10 @@
     </p>
 
     <p>
+      <div class="botonmovimiento">
       <input type="button" id="boton-retroceder" onclick="retroceder()" value="Retroceder" />
       <input type="button" id="boton-avanzar" onclick="avanzar()" value="Avanzar" />
+    </div>
     </p>
     <p id="desc"></p>
   </div>
