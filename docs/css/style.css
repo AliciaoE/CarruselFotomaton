@@ -35,9 +35,15 @@ p#desc {
 }
 
 h1 {
-  color: #8c0829;
-  /* Resto del código para el efecto de sombra */
+  color: #d85979;
+  display: inline-block;
+  margin: 10px;
+  font-family: "Kristen ITC";
+  background-color: rgba(250, 248, 127, 0.74);
+  border: 2px solid #92d41f;
+  color: #e95c5c;
 }
+
 
 #imagen {
   display: block;
@@ -66,12 +72,10 @@ input[type="button"] {
   align-items: flex-start;
 }
 #nombreImagen {
-  display: inline-block;
-  margin: 10px;
-  font-family: "Kristen ITC";
-}
+
 
 header {
   text-align: left;
   padding: 5px 20px; /* Espaciado del encabezado reducido */
+}
 }
